@@ -1,0 +1,8 @@
+{
+  "name": "jobbeurs",
+  "app_id": "59ee0d94",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
