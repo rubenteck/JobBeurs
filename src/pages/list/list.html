@@ -7,13 +7,18 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Bedrijven</ion-list-header>
-    <ion-item>
-	
-      <!-- inhoud list komt hier -->
-	  bedrijf 1
-	  
-    </ion-item>
-  </ion-list>
+
+<!-- lijst opslaan in geheugen en daarvan query runnen -->
+
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+<ion-list>
+<!--<ion-item-group>
+    <ion-item-divider color="light">{{ firtsLetter }}</ion-item-divider> -->
+		<ion-item *ngFor="let item of items">
+		{{ item }} 
+		<i class="fa fa-terminal" aria-hidden="true"></i>
+		</ion-item>
+<!--	</ion-item-group> -->
+</ion-list>
 </ion-content>
